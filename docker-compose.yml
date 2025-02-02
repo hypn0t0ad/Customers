@@ -1,0 +1,39 @@
+services:
+  keycloak:
+    image: quay.io/keycloak/keycloak:latest
+    container_name: keycloak
+    environment:
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: password
+    ports:
+      - "8180:8080"
+    command: ["start-dev", "--import-realm"]
+    volumes:
+      - ./customers_realm-export.json:/opt/keycloak/data/import/customers_realm-export.json
+    networks:
+      - mynetwork
+
+  backend:
+    build: ./customers_backend
+    container_name: customers_backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      - keycloak
+    networks:
+      - mynetwork
+
+  frontend:
+    build: ./customers_frontend
+    container_name: customers_frontend
+    ports:
+      - "5173:5173"
+    command: npm run preview -- --port 5173 --host
+    depends_on:
+      - backend
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
+    driver: bridge

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - CustomerControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>CustomerControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.customers_backend.html">com.example.customers_backend</a> &gt; CustomerControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.582s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">getCustomers_shouldReturnPaginatedResults()</td>
+<td class="success">0.571s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getCustomers_shouldReturnSecondPage()</td>
+<td class="success">0.011s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>21:19:21.665 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.customers_backend.CustomerControllerTest]: CustomerControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:19:21.726 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.customers_backend.CustomersBackendApplication for test class com.example.customers_backend.CustomerControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.2)
+
+2025-02-02T21:19:21.932+01:00  INFO 88399 --- [customers_backend] [    Test worker] c.e.c.CustomerControllerTest             : Starting CustomerControllerTest using Java 17.0.3 with PID 88399 (started by dallas in /Users/dallas/IdeaProjects/Customers/customers_backend)
+2025-02-02T21:19:21.933+01:00  INFO 88399 --- [customers_backend] [    Test worker] c.e.c.CustomerControllerTest             : The following 1 profile is active: &quot;test&quot;
+2025-02-02T21:19:22.245+01:00  INFO 88399 --- [customers_backend] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-02-02T21:19:22.273+01:00  INFO 88399 --- [customers_backend] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 1 JPA repository interface.
+2025-02-02T21:19:22.572+01:00  INFO 88399 --- [customers_backend] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-02-02T21:19:22.669+01:00  INFO 88399 --- [customers_backend] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:customerdb user=SA
+2025-02-02T21:19:22.670+01:00  INFO 88399 --- [customers_backend] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-02-02T21:19:22.693+01:00  INFO 88399 --- [customers_backend] [    Test worker] org.flywaydb.core.FlywayExecutor         : Database: jdbc:h2:mem:customerdb (H2 2.3)
+2025-02-02T21:19:22.698+01:00  WARN 88399 --- [customers_backend] [    Test worker] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 2.3.232 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.224.
+2025-02-02T21:19:22.709+01:00  INFO 88399 --- [customers_backend] [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table &quot;PUBLIC&quot;.&quot;flyway_schema_history&quot; does not exist yet
+2025-02-02T21:19:22.711+01:00  INFO 88399 --- [customers_backend] [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.006s)
+2025-02-02T21:19:22.715+01:00  INFO 88399 --- [customers_backend] [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table &quot;PUBLIC&quot;.&quot;flyway_schema_history&quot; ...
+2025-02-02T21:19:22.739+01:00  INFO 88399 --- [customers_backend] [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema &quot;PUBLIC&quot;: &lt;&lt; Empty Schema &gt;&gt;
+2025-02-02T21:19:22.745+01:00  INFO 88399 --- [customers_backend] [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema &quot;PUBLIC&quot; to version &quot;1 - create customer table&quot;
+2025-02-02T21:19:22.760+01:00  INFO 88399 --- [customers_backend] [    Test worker] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema &quot;PUBLIC&quot;, now at version v1 (execution time 00:00.005s)
+2025-02-02T21:19:22.803+01:00  INFO 88399 --- [customers_backend] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-02-02T21:19:22.830+01:00  INFO 88399 --- [customers_backend] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-02-02T21:19:22.845+01:00  INFO 88399 --- [customers_backend] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-02-02T21:19:22.973+01:00  INFO 88399 --- [customers_backend] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-02-02T21:19:22.996+01:00  WARN 88399 --- [customers_backend] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-02-02T21:19:23.005+01:00  INFO 88399 --- [customers_backend] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-02-02T21:19:23.377+01:00  INFO 88399 --- [customers_backend] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: alter table if exists customer alter column email set data type varchar(255)
+Hibernate: alter table if exists customer alter column name set data type varchar(255)
+Hibernate: alter table if exists customer alter column phonenumber set data type varchar(255)
+2025-02-02T21:19:23.392+01:00  INFO 88399 --- [customers_backend] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-02-02T21:19:23.513+01:00  WARN 88399 --- [customers_backend] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-02-02T21:19:23.527+01:00 DEBUG 88399 --- [customers_backend] [    Test worker] swordEncoderAuthenticationManagerBuilder : No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2025-02-02T21:19:23.681+01:00 DEBUG 88399 --- [customers_backend] [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, BearerTokenAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-02-02T21:19:23.799+01:00  INFO 88399 --- [customers_backend] [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:customerdb'
+2025-02-02T21:19:23.850+01:00  INFO 88399 --- [customers_backend] [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-02-02T21:19:23.851+01:00  INFO 88399 --- [customers_backend] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-02-02T21:19:23.851+01:00  INFO 88399 --- [customers_backend] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2025-02-02T21:19:23.886+01:00  INFO 88399 --- [customers_backend] [    Test worker] c.e.c.CustomerControllerTest             : Started CustomerControllerTest in 2.073 seconds (process running for 2.65)
+2025-02-02T21:19:24.246+01:00 DEBUG 88399 --- [customers_backend] [    Test worker] w.c.HttpSessionSecurityContextRepository : Created HttpSession as SecurityContext is non-default
+2025-02-02T21:19:24.247+01:00 DEBUG 88399 --- [customers_backend] [    Test worker] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]] to HttpSession [org.springframework.mock.web.MockHttpSession@7b57587e]
+2025-02-02T21:19:24.255+01:00 DEBUG 88399 --- [customers_backend] [    Test worker] o.s.security.web.FilterChainProxy        : Securing GET /api/customers
+2025-02-02T21:19:24.261+01:00 DEBUG 88399 --- [customers_backend] [    Test worker] o.s.security.web.FilterChainProxy        : Secured GET /api/customers
+2025-02-02T21:19:24.278+01:00  INFO 88399 --- [customers_backend] [    Test worker] c.e.c.controller.CustomerController      : Fetching all customers
+Hibernate: select c1_0.id,c1_0.address,c1_0.email,c1_0.name,c1_0.phonenumber from customer c1_0 offset ? rows fetch first ? rows only
+Hibernate: select count(c1_0.id) from customer c1_0
+2025-02-02T21:19:24.388+01:00  WARN 88399 --- [customers_backend] [    Test worker] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-02-02T21:19:24.401+01:00 DEBUG 88399 --- [customers_backend] [    Test worker] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]
+2025-02-02T21:19:24.471+01:00 DEBUG 88399 --- [customers_backend] [    Test worker] w.c.HttpSessionSecurityContextRepository : Created HttpSession as SecurityContext is non-default
+2025-02-02T21:19:24.472+01:00 DEBUG 88399 --- [customers_backend] [    Test worker] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]] to HttpSession [org.springframework.mock.web.MockHttpSession@15db4dc]
+2025-02-02T21:19:24.472+01:00 DEBUG 88399 --- [customers_backend] [    Test worker] o.s.security.web.FilterChainProxy        : Securing GET /api/customers?page=1
+2025-02-02T21:19:24.472+01:00 DEBUG 88399 --- [customers_backend] [    Test worker] o.s.security.web.FilterChainProxy        : Secured GET /api/customers?page=1
+2025-02-02T21:19:24.473+01:00  INFO 88399 --- [customers_backend] [    Test worker] c.e.c.controller.CustomerController      : Fetching all customers
+Hibernate: select c1_0.id,c1_0.address,c1_0.email,c1_0.name,c1_0.phonenumber from customer c1_0 offset ? rows fetch first ? rows only
+Hibernate: select count(c1_0.id) from customer c1_0
+2025-02-02T21:19:24.477+01:00 DEBUG 88399 --- [customers_backend] [    Test worker] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=user, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_USER]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_USER]]]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.11.1</a> at 2 feb. 2025 21:19:24</p>
+</div>
+</div>
+</body>
+</html>

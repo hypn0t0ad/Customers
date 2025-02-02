@@ -5,8 +5,10 @@
     <title>Silent Check SSo</title>
 </head>
 <body>
-<script src="../node_modules/keycloak-js/dist/keycloak.js"></script>
+<script src="../node_modules/keycloak-js/lib/keycloak.js"></script>
 <script>
+    import Keycloak from "keycloak-js";
+
     const keycloak = new Keycloak({
         url: 'http://localhost:8180',
         realm: 'customers-realm',

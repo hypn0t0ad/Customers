@@ -1,69 +1,69 @@
 customers_backend/HELP.md
-.gradle
-build/
-!gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
+customers_backend/.gradle
+customers_backend/build/
+customers_backend/!gradle/wrapper/gradle-wrapper.jar
+customers_backend/!**/src/main/**/build/
+customers_backend/!**/src/test/**/build/
 
 ### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+#customers_backend/.apt_generated
+#customers_backend/.classpath
+#customers_backend/.factorypath
+#customers_backend/.project
+#customers_backend/.settings
+#customers_backend/.springBeans
+#customers_backend/.sts4-cache
+#customers_backend/bin/
+#customers_backend/!**/src/main/**/bin/
+#customers_backend/!**/src/test/**/bin/
 
 ### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+#customers_backend/.idea
+#customers_backend/*.iws
+#customers_backend/*.iml
+#customers_backend/*.ipr
+#customers_backend/out/
+#customers_backend/!**/src/main/**/out/
+#customers_backend/!**/src/test/**/out/
 
 ### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+customers_backend/nbproject/private/
+customers_backend/nbbuild/
+customers_backend/dist/
+customers_backend/nbdist/
+customers_backend/.nb-gradle/
 
 ### VS Code ###
-.vscode/
+customers_frontend/.vscode/
 # Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+customers_frontend/logs
+customers_frontend/*.log
+customers_frontend/npm-debug.log*
+customers_frontend/yarn-debug.log*
+customers_frontend/yarn-error.log*
+customers_frontend/pnpm-debug.log*
+customers_frontend/lerna-debug.log*
 
-node_modules
-.DS_Store
-dist
-dist-ssr
-coverage
-*.local
+customers_frontend/node_modules
+customers_frontend/.DS_Store
+customers_frontend/dist
+customers_frontend/dist-ssr
+customers_frontend/coverage
+customers_frontend/*.local
 
-/cypress/videos/
-/cypress/screenshots/
+customers_frontend/cypress/videos/
+customers_frontend/cypress/screenshots/
 
 # Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-*.tsbuildinfo
+#customers_frontend/.vscode/*
+#customers_frontend/!.vscode/extensions.json
+#customers_frontend/.idea
+#customers_frontend/*.suo
+#customers_frontend/*.ntvs*
+#customers_frontend/*.njsproj
+#customers_frontend/*.sln
+#customers_frontend/*.sw?
+#
+#customers_frontend/*.tsbuildinfo
 
 

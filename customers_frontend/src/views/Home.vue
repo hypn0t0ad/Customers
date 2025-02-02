@@ -81,6 +81,7 @@ export default {
     fetchCustomers() {
       console.log("Trying to fetch customers!");
       console.log("The current page: " + this.currentPage);
+      console.log("The token: " + this.keycloak.token);
       this.loading = true;
       axios
           .get(`http://localhost:8080/api/customers?page=${this.currentPage}&size=10`, {
