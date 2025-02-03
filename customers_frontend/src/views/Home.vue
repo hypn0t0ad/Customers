@@ -10,16 +10,16 @@
       <table>
         <thead>
         <tr>
-          <th>ID</th>
           <th>Name</th>
+          <th>Address</th>
           <th>Email</th>
-          <th>Phonenumber</th>
+          <th>Phone number</th>
         </tr>
         </thead>
         <tbody>
         <tr v-for="customer in customers" :key="customer.id">
-          <td>{{ customer.id }}</td>
           <td>{{ customer.name }}</td>
+          <td>{{ customer.address }}</td>
           <td>{{ customer.email }}</td>
           <td>{{ customer.phonenumber }}</td>
         </tr>
@@ -91,7 +91,7 @@ export default {
             },
           })
           .then((response) => {
-            console.log("The response: " + response);
+            console.log("The response: " + response.data.content);
             this.customers = response.data.content;
             this.totalPages = response.data.totalPages;
           })
