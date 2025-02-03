@@ -13,6 +13,7 @@
           <th>ID</th>
           <th>Name</th>
           <th>Email</th>
+          <th>Phonenumber</th>
         </tr>
         </thead>
         <tbody>

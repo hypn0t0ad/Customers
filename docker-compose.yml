@@ -1,39 +1,50 @@
 services:
+  localhost:
+    image: alpine:latest
+    command: sleep infinity
+    ports:
+      - "8080:8080" # backend port
+      - "8180:8180" # oauth-sample port
+      - "5173:5173"
   keycloak:
     image: quay.io/keycloak/keycloak:latest
     container_name: keycloak
+    network_mode: "service:localhost"
     environment:
-      KEYCLOAK_ADMIN: admin
-      KEYCLOAK_ADMIN_PASSWORD: password
-    ports:
-      - "8180:8080"
+      KC_BOOTSTRAP_ADMIN_USERNAME: admin
+      KC_BOOTSTRAP_ADMIN_PASSWORD: password
+      KC_HTTP_PORT: 8180
+#    ports:
+#      - "8180:8180"
     command: ["start-dev", "--import-realm"]
     volumes:
       - ./customers_realm-export.json:/opt/keycloak/data/import/customers_realm-export.json
-    networks:
-      - mynetwork
+#    networks:
+#      - mynetwork
 
   backend:
     build: ./customers_backend
     container_name: customers_backend
-    ports:
-      - "8080:8080"
+    network_mode: "service:localhost"
+#    ports:
+#      - "8080:8080"
     depends_on:
       - keycloak
-    networks:
-      - mynetwork
+#    networks:
+#      - mynetwork
 
   frontend:
     build: ./customers_frontend
     container_name: customers_frontend
-    ports:
-      - "5173:5173"
+    network_mode: "service:localhost"
+#    ports:
+#      - "5173:5173"
     command: npm run preview -- --port 5173 --host
     depends_on:
       - backend
-    networks:
-      - mynetwork
+#    networks:
+#      - mynetwork
 
-networks:
-  mynetwork:
-    driver: bridge
+#networks:
+#  mynetwork:
+#    driver: bridge
